@@ -54,7 +54,7 @@ PLACE_DOMAIN=${PLACE_DOMAIN:="localhost:8080"}
 PLACE_EMAIL=${PLACE_EMAIL:="support@place.tech"}
 PLACE_PASSWORD=${PLACE_PASSWORD:="development"}
 
-if [ ! -f ../ssl/default-domain/fullchain.pem ]; then
+if [ ! -f ./ssl/default-domain/fullchain.pem ]; then
   echo "=== Generating SSL certificates..."
   ./scripts/generate-ssl 2> /dev/null || (printf "\nfailed to generate SSL certificates\n" && exit 1)
 fi
