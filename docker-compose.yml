@@ -180,6 +180,7 @@ services:
       PLACE_USERNAME: ${PLACE_USERNAME:-Place Support (localhost:8080)}
       PLACE_EMAIL: ${PLACE_EMAIL:-support@place.tech}
       PLACE_PASSWORD: ${PLACE_PASSWORD:-development}
+      PLACE_TLS: ${PLACE_TLS:-true}
       # Service Hosts
       << : *rethinkdb-client-env
       << : *elastic-client-env
