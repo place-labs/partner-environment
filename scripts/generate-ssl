@@ -7,7 +7,7 @@ mkdir -p ../ssl/default-domain
 cd ../ssl/default-domain
 
 openssl req -newkey rsa:2048 -nodes -days 365 -x509 \
-  -subj "/C=AU/ST=NSW/L=Sydney/O=ACA/CN=localhost" \
+  -subj "/C=AU/ST=NSW/L=Sydney/O=PlaceOS/CN=localhost" \
   -keyout privkey.pem -out fullchain.pem
 
 openssl dhparam -out ../dhparam.pem 1024
