@@ -10,4 +10,4 @@ openssl req -newkey rsa:2048 -nodes -days 365 -x509 \
   -subj "/C=AU/ST=NSW/L=Sydney/O=ACA/CN=localhost" \
   -keyout privkey.pem -out fullchain.pem
 
-openssl dhparam -out dhparams.pem 1024
+openssl dhparam -out ../dhparam.pem 1024
