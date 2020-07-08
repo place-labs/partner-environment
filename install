@@ -56,7 +56,7 @@ PLACE_PASSWORD=${PLACE_PASSWORD:="development"}
 
 if [ ! -f ./ssl/default-domain/fullchain.pem ]; then
   echo "=== Generating SSL certificates..."
-  ./scripts/generate-ssl 2> /dev/null || (printf "\nfailed to generate SSL certificates\n" && exit 1)
+  ./scripts/generate-ssl ${PLACE_DOMAIN} 2> /dev/null || (printf "\nfailed to generate SSL certificates\n" && exit 1)
 fi
 
 echo "=== Bringing up services..."
