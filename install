@@ -49,6 +49,7 @@ do
   esac
 done
 
+source .env
 PLACE_DOMAIN=${PLACE_DOMAIN:="localhost:8080"}
 PLACE_EMAIL=${PLACE_EMAIL:="support@place.tech"}
 PLACE_PASSWORD=${PLACE_PASSWORD:="development"}
@@ -81,5 +82,5 @@ fi
 echo "=== Running init container"
 ./scripts/run-init-container
 
-echo -e "\n=== Setup complete. Login to http://$PLACE_DOMAIN/backoffice/ with"
+echo -e "\n=== Setup complete. Login to https://$PLACE_DOMAIN/backoffice/ with"
 echo "$PLACE_EMAIL:$PLACE_PASSWORD"
