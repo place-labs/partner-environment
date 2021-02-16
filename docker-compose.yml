@@ -149,8 +149,6 @@ services:
       placeos:
     depends_on:
       - core
-    profiles:
-      - edge
     environment:
       << : *edge-env
       << : *deployment-env
