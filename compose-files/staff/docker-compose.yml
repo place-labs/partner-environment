@@ -1,9 +1,5 @@
 version: "3.7"
 
-networks:
-  placeos_placeos:
-    external: true
-
 volumes:
   postgres-data:
 
